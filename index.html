@@ -8,16 +8,38 @@
   
   <title>Frontend Mentor | Four card feature section</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    .poppins-extralight {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+    }
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .poppins-semibold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }                                               
     body {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0;
+      background-color: #FAFAFA;
+      padding: 40px 15px;
     }
     main {
+      background-color: #FAFAFA;
       margin: 20px;
       box-sizing: border-box;
       display: flex;
@@ -28,44 +50,73 @@
       text-align: center;
     }
     .card {
+      padding: 20px;
+      gap: 5px;
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-      border: 1px solid black;
-      box-shadow: inset;
+      border-radius: 5px;
       text-align: left;
+      box-shadow: 
+        -10px 0px 10px #E2E9F3,  /* Left shadow */
+        10px 0px 10px #E2E9F3,   /* Right shadow */
+        0px 10px 10px #E2E9F3;   /* Bottom shadow */
     }
     img {
       align-self: flex-end;
+    }
+    #title-1 {
+      font-size: 21px;
+      margin-bottom: 0;
+    }
+    #title-2 {
+      margin-top: 0;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    #title-desc {
+      font-size: 15px;
+    }
+    #supervisor {
+      border-top: 2px solid #48D0CE;
+    }
+    #team-builder {
+      border-top: 2px solid #E8A6A7;
+    }
+    #karma {
+      border-top: 2px solid #ECAE61;
+    }
+    #calculator {
+      border-top: 2px solid #5B9AE1;
     }
   </style>
 </head>
 <body>
   <main>
     <div id="main-title">
-      <h1>Reliable, efficient delivery</h1>
-      <h1>Powered by Technology</h1>
-      <h3>Our Artificial Intelligence powered tools use millions of project data points 
+      <h1 id="title-1" class="poppins-extralight">Reliable, efficient delivery</h1>
+      <h1 id="title-2" class="poppins-regular">Powered by Technology</h1>
+      <p id="title-desc" class="poppins-extralight">Our Artificial Intelligence powered tools use millions of project data points 
         to ensure that your project is successful</p>
     </div>
     <div id="supervisor" class="card">
-      <h2>Supervisor</h2>
-      <p>Monitors activity to identify project roadblocks</p>
+      <h2 class="poppins-regular">Supervisor</h2>
+      <p class="poppins-extralight">Monitors activity to identify project roadblocks</p>
       <img src="./images/icon-supervisor.svg">
     </div>
     <div id="team-builder" class="card">
-      <h2>Team Builder</h2>
-      <p>Scans our talent network to create the optimal team for your project</p>
+      <h2 class="poppins-regular">Team Builder</h2>
+      <p class="poppins-extralight">Scans our talent network to create the optimal team for your project</p>
       <img src="./images/icon-team-builder.svg">
     </div>
     <div id="karma" class="card">
-      <h2>Karma</h2>
-      <p>Regularly evaluates our talent to ensure quality</p>
+      <h2 class="poppins-regular">Karma</h2>
+      <p class="poppins-extralight">Regularly evaluates our talent to ensure quality</p>
       <img src="./images/icon-karma.svg">
     </div>
     <div id="calculator" class="card">
-      <h2>Calculator</h2>
-      <p>data from past projects to provide better delivery estimates</p>
+      <h2 class="poppins-regular">Calculator</h2>
+      <p class="poppins-extralight">data from past projects to provide better delivery estimates</p>
       <img src="./images/icon-calculator.svg">
     </div>
   </main>  
