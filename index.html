@@ -93,6 +93,43 @@
     #calculator {
       border-top: 2px solid #5B9AE1;
     }
+    @media (min-width:48em) {
+      body {
+        margin: 0;
+        height: 100vh;
+        padding: 40px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        justify-content: center;
+      }
+      #main-title {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: center;
+      }
+      #supervisor {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        align-self: center;
+      }
+      #team-builder {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      #karma {
+        grid-column: 2/3;
+        grid-row: 3/3;
+      }
+      #calculator {
+        grid-column: 3/3;
+        grid-row: 2/4;
+        align-self: center;
+      }
+    }
   </style>
 </head>
 <body>
